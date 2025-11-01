@@ -43,7 +43,11 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Task" : "public/js/task_doctype_customization.js"}
+doctype_js = {
+    "Task" : "public/js/task_doctype_customization.js",
+    "Task": "public/js/custom_task.js"
+    }
+
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -129,9 +133,9 @@ doctype_js = {"Task" : "public/js/task_doctype_customization.js"}
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+    "Task": "ztric.custom_task.CustomTask"
+}
 
 # Document Events
 # ---------------
